@@ -82,30 +82,30 @@
 `AllConfig`要改的部分，如下：
 ```java
 public class AllConfig {
-    public static final String VxAppId = "微信的APPID";
-    public static final String VxAppSecret = "微信的密钥";
+    public static final String VxAppId = "wx1fe69dea66a535ba";
+    public static final String VxAppSecret = "e4777be7111bb0d6d0b14287aa13aa59";
     public static final String WeatherKey = "高德地图key";
     private static void init(){
         //如果要多个人的话，就复制这个一遍，然后填写里面的内容。这里默认两个人,大伙应该是两个人吧（笑）
         userList.add(getUser(
-                "这个人扫码后的微信号",//扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "这个人的称呼",//咋称呼这个人
-                new BirthDay(1999,8,11,false),  //这个人的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
+                "ob6is52U68Jn2RocftgLj4lBjtu4",//扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "黄乐灵",//咋称呼这个人
+                new BirthDay(2002,8,11,false),  //这个人的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
                 new BirthDay(1999,2,15,true), //这个人对象的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
                 LocalDate.of(2020,7,8),//这个人的纪念日
-                "江苏省南京市玄武区",//这个人的详细地址
-                "南京",//这个人在的城市
-                "微信消息模板ID"));//要给这个人发送的模板ID
+                "广东省广州市",//这个人的详细地址
+                "广州",//这个人在的城市
+                "m-Mn2WEiXMYm2kFKa0mb6ggXgcl7niqUWsqqzaCcZxo"));//要给这个人发送的模板ID
 
         userList.add(getUser(
-                "这个人扫码后的微信号",
-                "这个人的名字",
-                new BirthDay(1999,2,15,true),  //这个人的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
+                "",
+                "黄乐灵",
+                new BirthDay(2002,2,15,true),  //这个人的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
                 new BirthDay(1999,8,11,false), //这个人对象的生日，最后的这个true/false，如果是过公历生日就写false，如果是过农历生日写true
                 LocalDate.of(2020,7,8),//这个人的纪念日
-                "江苏省南京市玄武区",//这个人的详细地址
-                "南京",//这个人在的城市
-                "微信消息模板ID"));//要给这个人发送的模板ID
+                "广东省广州市白云区",//这个人的详细地址
+                "广州",//这个人在的城市
+                "m-Mn2WEiXMYm2kFKa0mb6ggXgcl7niqUWsqqzaCcZxo"));//要给这个人发送的模板ID
 
     }
 
